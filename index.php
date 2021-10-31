@@ -31,7 +31,7 @@
           <div class="underline"></div>
           <div class="underline"></div>
           <li style="border-bottom: 5px solid #000"><a href="#">Home</a></li>
-          <li><a href="./shop.html">Shop</a></li>
+          <li><a href="./shop.php">Shop</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Blog</a></li>
           <li><a href="#">More</a></li>

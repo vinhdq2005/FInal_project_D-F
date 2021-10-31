@@ -28,7 +28,7 @@
           <!-- <div class="underline"></div>
           <div class="underline"></div>
           <div class="underline"></div> -->
-          <li><a href="/Final_project/index.html">Home</a></li>
+          <li><a href="./index.php">Home</a></li>
           <li style="border-bottom: 5px solid #000;"><a href="#">Shop</a></li>
           <li><a href="#">Menu</a></li>
           <li><a href="#">Blog</a></li>
