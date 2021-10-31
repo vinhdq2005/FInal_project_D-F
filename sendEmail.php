@@ -20,7 +20,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         $nTo = 'Vinh Ne'; 
         $mTo = 'vinhdq2005@gmail.com';   
         $mail             = new PHPMailer();
-        $body             = '<strong>Họ và tên:  </strong>'.$name.'<br>'.'<strong>Email:  </strong>'.$email.'<br>'.'<strong>Số điện thoại: </strong>'.$phone.'<br>'.'<strong>Người giới thiệu: </strong>'.$address.'<br>'.'<strong>Lĩnh vực đã đầu tư: </strong>'.$subject.'<br>'.'<strong>Số vốn khởi điểm bắt đầu: </strong>'.$message;
+        $body             = '<strong>Họ và tên:  </strong>'.$name.'<br>'.'<strong>Email:  </strong>'.$email.'<br>'.'<strong>Số điện thoại: </strong>'.$phone.'<br>'.'<strong>Địa chỉ: </strong>'.$address.'<br>'.'<strong>Chủ đề: </strong>'.$subject.'<br>'.'<strong>Nội dung: </strong>'.$message;
         $title = 'Khách Hàng | '.$name;  
         $mail->IsSMTP();             
         $mail->CharSet  = "utf-8";
