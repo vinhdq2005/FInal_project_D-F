@@ -15,8 +15,8 @@ if(isset($_POST['name']) && isset($_POST['email'])){
 
 
         $nFrom = 'Web Vinh Web';    
-        $mFrom = 'nguyenvancuong215@gmail.com'; 
-        $mPass = 'Menu00d1';       
+        $mFrom = 'vinhdq4705@gmail.com'; 
+        $mPass = 'vinhdq04072005';       
         $nTo = 'Vinh Ne'; 
         $mTo = 'vinhdq2005@gmail.com';   
         $mail             = new PHPMailer();
