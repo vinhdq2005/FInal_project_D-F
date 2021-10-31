@@ -293,11 +293,31 @@
     <script src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script>
       AOS.init();
     </script>
 
     <script>
+
+function sweetAlert(icon, content) {
+            const Toast = Swal.mixin({
+                toast: true,
+                position: 'top-end',
+                showConfirmButton: false,
+                timer: 3000,
+                timerProgressBar: true,
+                onOpen: (toast) => {
+                    toast.addEventListener('mouseenter', Swal.stopTimer)
+                    toast.addEventListener('mouseleave', Swal.resumeTimer)
+                }
+            })
+
+            Toast.fire({
+                icon: icon,
+                title: content
+            })
+        }
       let formVinhFeedback = document.querySelector("#feedbackForm");
       formVinhFeedback.onsubmit = (e) => {
         e.preventDefault();
@@ -324,7 +344,7 @@
           dataType: "json",
           data: data,
           success: function (data) {
-            alert(data);
+            sweetAlert(data.status, data.response);
           },
         });
 
