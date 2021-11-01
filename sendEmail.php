@@ -29,7 +29,7 @@ if(isset($_POST['name']) && isset($_POST['email'])){
         $mail->SMTPSecure = "ssl"; 
         $mail->Host       = "smtp.gmail.com";
         $mail->Port       = 465; 
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+
         $mail->Username   = $mFrom;  
         $mail->Password   = $mPass;    
         $mail->SetFrom($mFrom, $nFrom);
