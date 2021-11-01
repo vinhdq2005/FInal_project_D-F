@@ -744,7 +744,7 @@
 #login .login-left {
     width: 50%;
     height: 100%;
-    background: url(/Final_project/assets/img/login.jpg) top center/ cover no-repeat;
+    background: url(./assets/img/login.jpg) top center/ cover no-repeat;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
